@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>珠宝街商城移动版</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="style/base.css">
+<link rel="stylesheet" type="text/css" href="style/category.css">
+<script src="js/adaptive.js"></script>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {  
+    $(".tabs li").click(function() {  
+       $(".tabs li a").removeClass("current");
+	   $(this).children("a").addClass("current");
+	   
+	   $(".category_right").hide(0);
+	   $(".category_right:eq(" + $(this).index() + ")").show(0);
+    });  
+  
+});  
+</script>
+</head>
+
+<body>
+<!--header-->
+<header class="m_sub_header">
+  <div class="m_header_left"><a href="#"><img src="images/logo_white.png"></a></div>
+  <!--m_search-->
+  <div class="m_search">
+    <form action="" method="post">
+      <input type="text" placeholder="请输入关键字">
+      <input type="button" value="&#xe6fe;" class="iconfont">
+    </form>
+  </div>
+  <!--m_search end--> 
+  
+</header>
+<!--header end--> 
+<!--category_main-->
+<section class="category_main m_layout" > 
+  <!--category_left-->
+  <div class="category_left">
+    <ul class="tabs">
+      <li><a href="javascript:;">为您推荐</a></li>
+      <li><a href="javascript:;"  class="current" >名品大牌</a></li>
+      <li><a href="javascript:;">创意空间</a></li>
+      <li><a href="javascript:;">珠宝基地</a></li>
+      <li><a href="javascript:;">黄金</a></li>
+      <li><a href="javascript:;">K金</a></li>
+      <li><a href="javascript:;">铂金</a></li>
+      <li><a href="javascript:;">银饰</a></li>
+      <li><a href="javascript:;">钻石</a></li>
+      <li><a href="javascript:;">彩宝</a></li>
+      <li><a href="javascript:;">珍珠</a></li>
+      <li><a href="javascript:;">首饰</a></li>
+      <li><a href="javascript:;">翡翠</a></li>
+      <li><a href="javascript:;">和田玉</a></li>
+      <li><a href="javascript:;">水晶</a></li>
+      <li><a href="javascript:;">琥珀</a></li>
+      <li><a href="javascript:;">蜜蜡</a></li>
+      <li><a href="javascript:;">南红</a></li>
+      <li><a href="javascript:;">玛瑙</a></li>
+      <li><a href="javascript:;">玉石</a></li>
+      <li><a href="javascript:;">鸡血石</a></li>
+      <li><a href="javascript:;">木串把件</a></li>
+      <li><a href="javascript:;">工艺品</a></li>
+      <li><a href="javascript:;">创意礼品</a></li>
+      <li><a href="javascript:;">钟表</a></li>
+      <li><a href="javascript:;">眼镜</a></li>
+      <li><a href="javascript:;">瓷器紫砂</a></li>
+      <li><a href="javascript:;">字画收藏</a></li>
+      <li><a href="javascript:;">金银投资</a></li>
+    </ul>
+  </div>
+  <!--category_left end--> 
+  <!--category_right-->
+  <div class="category_right" style="display:none;">
+    <div class="right_con"> <a href="#" class="cat_banner"><img src="images/cat_banner1.jpg"></a>
+      <div class="list">
+        <p class="tit">专场推荐</p>
+        <ul class="clearfix">
+          <li> <a href="#"> <img src="images/cat_img1.jpg" alt="黄金盛典" >
+            <p>黄金盛典</p>
+            </a> 
+            </li>
+          <li> <a href="#"> <img src="images/cat_img2.jpg" alt="黄金盛典" >
+            <p>黄金盛典</p>
+            </a> </li>
+          <li> <a href="#"> <img src="images/cat_img3.jpg" alt="黄金盛典" >
+            <p>黄金盛典</p>
+            </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--category_right end--> 
+   <!--category_right-->
+  <div class="category_right" style="display:block;">
+    <div class="right_con"> <a href="#" class="cat_banner"><img src="images/cat_banner2.jpg"></a>
+      <div class="list">
+        <p class="tit">专场dd推荐1</p>
+        <ul class="clearfix">
+          <li> <a href="#"> <img src="images/cat_img1.jpg" alt="黄金盛典" >
+            <p>黄金盛1典</p>
+            </a> 
+            </li>
+          <li> <a href="#"> <img src="images/cat_img2.jpg" alt="黄金盛典" >
+            <p>黄金盛典</p>
+            </a> </li>
+          <li> <a href="#"> <img src="images/cat_img3.jpg" alt="黄金盛典" >
+            <p>黄金盛典</p>
+            </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--category_right end--> 
+   <!--category_right-->
+  <div class="category_right" style="display:none;">
+    <div class="right_con"> <a href="#" class="cat_banner"><img src="images/cat_banner1.jpg"></a>
+      <div class="list">
+        <p class="tit">专场推荐33</p>
+        <ul class="clearfix">
+          <li> <a href="#"> <img src="images/cat_img1.jpg" alt="黄金盛典" >
+            <p>黄金盛典</p>
+            </a> 
+            </li>
+          <li> <a href="#"> <img src="images/cat_img2.jpg" alt="黄金盛典" >
+            <p>黄金盛典</p>
+            </a> </li>
+          <li> <a href="#"> <img src="images/cat_img3.jpg" alt="黄金盛典" >
+            <p>黄金盛典</p>
+            </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--category_right end--> 
+</section>
+<!--category_main end--> 
+<!--footer-->
+<footer>
+  <ul>
+    <li class="tab_on"> <a href=""> </a> </li>
+    <li> <a href=""> </a> </li>
+    <li> <a href=""> </a> </li>
+    <li> <a href=""> </a> </li>
+    <li> <a href=""> </a> </li>
+  </ul>
+</footer>
+<!--footer end-->
+
+</body>
+</html>

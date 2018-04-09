@@ -1,0 +1,49 @@
+/* CSS Document */
+/*m_sub_header1*/
+.m_sub_header1{ width:100%;max-width:7.5rem; min-width:3.2rem; height:0.88rem; background:#fff; margin:0 auto; position:fixed;/*固定定位*/ top:0; left:0; right:0; z-index:20; border-bottom:0.02rem solid #dbdbdb; }
+
+.m_sub_header1 .m_header_left{ width:0.44rem; height:0.44rem;  position:absolute; left:0.3rem; top:0.2rem;}
+.m_sub_header1 .m_header_left a{ width:100%; height:100%; display:block;}
+.m_sub_header1 .m_header_left a img{ width:100%; height:100%;}
+
+.m_sub_header1 .m_header_right{ width:0.68rem; height:0.48rem; font-size:0.28rem; color:#7e8186; position:absolute; right:0.22rem; top:0.22rem;}
+.m_sub_header1 h2{ text-align:center; height:100%;font-size:0.32rem; line-height:0.86rem;}
+
+
+/*shopping*/
+
+input.check{ width:0.42rem; height:0.42rem; display:block; background:url(../images/icon_radio3.png) no-repeat left center; background-size:0.42rem 0.42rem; position:absolute; left:0; top:50%; /*margin-top:-0.21rem;*/ transform:translateY(-50%);}
+input.check:checked{ background:url(../images/icon_radio4.png) no-repeat left center; background-size:0.42rem 0.42rem; }
+
+
+.shopping{ background:#f4f4f4; overflow: hidden; padding-top:0.88rem; padding-bottom:1rem;}
+.shopping .shop-group-item{ width:100%; height:auto; background:#fff; padding-left:0.2rem;/*注意*/}
+.shopping .shop-group-item .shop-name{ width:100%; height:0.8rem; border-bottom:0.02rem solid #e8e8e8; line-height:0.8rem; position:relative;}
+.shopping .shop-group-item .shop-name h4{ width:100%; padding-left:0.62rem; font-size:0.28rem; font-weight:400;}
+
+.shopping .shop-group-item ul{ width:100%; min-height:2.3rem;}
+.shopping .shop-group-item ul li{ width:100%; height:2.3rem; }
+.shopping .shop-group-item ul li .shop-info{ width:100%; height:100%; position:relative;/*参照物*/}
+.shopping .shop-group-item ul li .shop-info .shop-info-img{ width:1.88rem; height:1.88rem; overflow:hidden; position:absolute; left:0.6rem; top:50%; transform:translateY(-50%);}
+.shopping .shop-group-item ul li .shop-info .shop-info-img img{ width:100%;}
+
+.shopping .shop-group-item ul li .shop-info .shop-info-text{ width:4.46rem; height:1.88rem;position:absolute; right:0.2rem; top:50%; transform:translateY(-50%);}
+.shopping .shop-group-item ul li .shop-info .shop-info-text h4{font-size:0.28rem;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow: hidden; font-weight:200;}
+
+.shopping .shop-group-item ul li .shop-info .shop-info-text .shop-price{width:100%;height:0.48rem;line-height:0.48rem;position:absolute; bottom:0rem; left:0; color:#ff6699;}
+.shopping .shop-group-item ul li .shop-info .shop-info-text .shop-arithmetic{position:absolute;right:0;top:0;width:1.68rem;height:100%;border:1px solid #e0e0e0;}
+.shop-info .shop-info-text .shop-arithmetic .minus{border-right:1px solid #e0e0e0; display:inline-block; width:0.5rem;text-align:center;}
+.shop-info .shop-info-text .shop-arithmetic .plus{border-left:1px solid #e0e0e0; display:inline-block; width:0.5rem; text-align:center;}
+.shop-info .shop-info-text .shop-arithmetic .num{width:0.5rem;text-align:center;border:none;display: inline-block;height:100%;text-align:center;}
+
+.foot-edit{ width:100%; max-width:7.5rem; min-width:3.2rem; height:1rem; background: rgba(255,255,255,1); border-top:0.02rem solid #cacaca; position:fixed;bottom:0.98rem; left:0; right:0; margin:0 auto;}
+.foot-edit .all-checkbox{ width:1.5rem; line-height:1rem; padding-left:0.76rem;}
+.foot-edit .all-checkbox .check{ position:absolute; left:0.2rem;}
+.foot-edit .foot-edit_r{ width:4.3rem; height:100%; position:absolute; right:0; top:0; }
+
+.foot-edit .foot-edit_r .settlement{ width:2.1rem; height:100%; background:#ff6699; font-size:0.3rem; text-align:center; line-height:100%; border:0 none; position:absolute; right:0; top:0; color:#fff; 
+font-family:"microsoft yahei", "\534E\6587\7EC6\9ED1", Verdana, Arial, Helvetica, sans-serif; }
+.foot-edit .foot-edit_r .shop-total{ width:100%; padding-right:2.24rem; text-align:right; line-height:0.4rem; padding-top:0.1rem;}
+.foot-edit .foot-edit_r .shop-total strong{}
+.foot-edit .foot-edit_r .shop-total strong i{ color:#ff58a7; font-style:normal; font-size:0.3rem;}
+.foot-edit .foot-edit_r .shop-total span{ display:block; font-size:0.24rem; color:#9ba7c9;}

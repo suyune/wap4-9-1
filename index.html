@@ -1,0 +1,616 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>珠宝街商城移动版</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="style/base.css">
+<link rel="stylesheet" type="text/css" href="style/swiper-4.1.6.min.css">
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<script src="js/adaptive.js"></script>
+</head>
+
+<body>
+<!--header-->
+<header class="m_header">
+	<div class="m_header_left iconfont">&#xe605;</div>
+    <!--m_search-->
+	<div class="m_search">
+    	<form action="" method="post">
+            <input type="text" placeholder="请输入关键字">
+            <input type="button" value="&#xe6fe;" class="iconfont">
+         </form>
+    
+    </div>
+    <!--m_search end-->
+    <div class="m_header_right iconfont">&#xe743;</div>
+</header>
+<!--header end-->
+<!--main-->
+<main>
+	<div class="main_wrap m_layout">
+    	<!--banner-->
+    	<div class="banner">
+        	<!--swiper-container-->
+        	<div class="swiper-container swiper-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="images/banner1.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/banner2.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/banner3.jpg"></a></div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination banner-pag"></div>
+                
+            </div>
+        	<!--swiper-container end-->
+        </div>
+    	<!--banner end-->
+ 
+        <!--nav-->
+        <nav>
+        	<ul>
+        		<li>
+                	<a href="#">
+                        <img src="images/pinpaijie.png">
+                        <p>品牌街</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <img src="images/chuangyidingzhi.png">
+                        <p>创意订制</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <img src="images/mingxingtongkuan.png">
+                        <p>明星同款</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <img src="images/duobaodao.png">
+                        <p>夺宝岛</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <img src="images/xuanfubang.png">
+                        <p>炫富榜</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <img src="images/zhubaojidi.png">
+                        <p>珠宝基地</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <img src="images/quanqiuqudao.png">
+                        <p>全球渠道</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <img src="images/lingquan.png">
+                        <p>领券</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <img src="images/wabaozang.png">
+                        <p>挖宝藏</p>
+                    </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <img src="images/gengduo.png">
+                        <p>百宝箱</p>
+                    </a>
+                </li>
+        	</ul>
+        </nav>
+    	<!--nav end-->
+        <!--floor_show-->
+        <section class="floor_show clearfix">
+        	<a href="#">
+        		<img src="images/m_jm1.jpg">
+            </a>
+            <a href="#">
+        		<img src="images/m_jm2.jpg">
+            </a>
+            <a href="#">
+        		<img src="images/m_jm3.jpg">
+            </a>
+        </section>
+        <!--floor_show end-->
+        <!--floor_notice-->
+        <section class="floor_notice">
+        	<div class="notice_bt">
+        		<h2>珠宝街</h2><span>头条</span>
+            </div>
+            <!--notice_con-->
+        	<div class="notice_con">
+            	<!-- swiper-container -->
+                  <div class="swiper-container swiper-notice">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">热烈祝贺珍珠世家旗舰店入驻珠宝街</div>
+                      <div class="swiper-slide">热烈祝贺美奈尔珍珠旗舰店入驻珠宝街平台</div>
+                      <div class="swiper-slide">热烈祝贺珍珠世家旗舰店入驻珠宝街111</div>
+                      <div class="swiper-slide">热烈祝贺美奈尔珍珠旗舰店入驻珠宝街平台22 4</div>
+                    </div>
+                  </div>
+				<!-- swiper-container -->
+            </div>
+             <!--notice_con end-->
+        </section>
+        <!--floor_notice end-->
+        <!--floor_kill-->
+        <section class="floor_kill">
+        	<!--kill_bt-->
+        	<div class="kill_bt">
+            	<h2>掌上秒拍</h2>
+                <div><p>距离开始：</p><span id="hours">04</span>:<span id="minutes">18</span>:<span id="seconds">40</span></div>
+                <a href="#">更多好礼等你来拿</a>
+            </div>
+            <!--kill_bt end-->
+            <script type="text/javascript">
+	var endTime = new Date("2018/3/28,21:27:00");
+	showTime();
+
+	function showTime(){
+		var t;
+		var now = new Date();
+		var diff = (endTime.getTime() - now.getTime())/1000;
+
+		if(diff <= 0){
+			var o = document.getElementById("bot-box");
+			o.style.display="block";
+			//o.style.background="url(images/flash_end.png) no-repeat";
+			o.innerHTML = "秒杀已结束!";
+			clearTimeout(t);
+		}else{
+			var h = parseInt(diff / (60 * 60));
+			var m = parseInt((diff / 60) % 60); //计算剩余分钟
+			var s = parseInt(diff % 60); //计算剩余秒
+
+			if(h < 10){
+				h = "0" + h;
+			}
+			if(m < 10){
+				m = "0" + m;
+			}
+			if(s < 10){
+				s = "0" + s;
+			}
+
+			document.getElementById("hours").innerHTML = h;
+			document.getElementById("minutes").innerHTML = m;
+			document.getElementById("seconds").innerHTML = s;
+
+			t = setTimeout(showTime, 1000);
+		}
+	}
+</script>   
+            <!--kill_con-->
+            <div class="kill_con">
+            	<!-- swiper-container -->
+              <div class="swiper-container swiper-kill">
+                <div class="swiper-wrapper">
+                	<!--一项-->
+                  <div class="swiper-slide">
+                  	<a href="#">
+                  		<div class="pic">
+                  			<img src="images/img1.jpg">
+                  		</div>
+                        <div class="text">
+                        	<p class="name">千足珠宝叶澜近圆强光光洁10-10.5mm珍珠女款银戒指 白色  14# 10-10.5mm</p>
+                            <p class="pro">￥180.00</p>
+                            <p class="price">￥246.00</p>
+                        
+                        </div>
+                  	</a>
+                </div>
+				<!--一项　end-->
+                	<!--一项-->
+                  <div class="swiper-slide">
+                  	<a href="#">
+                  		<div class="pic">
+                  			<img src="images/img2.jpg">
+                  		</div>
+                        <div class="text">
+                        	<p class="name">千足珠宝叶澜近圆强光光洁10-10.5mm珍珠女款银戒指 白色  14# 10-10.5mm</p>
+                            <p class="pro">￥180.00</p>
+                            <p class="price">￥246.00</p>
+                        
+                        </div>
+                  	</a>
+                </div>
+				<!--一项　end-->
+                	<!--一项-->
+                  <div class="swiper-slide">
+                  	<a href="#">
+                  		<div class="pic">
+                  			<img src="images/himg2.jpg">
+                  		</div>
+                        <div class="text">
+                        	<p class="name">千足珠宝叶澜近圆强光光洁10-10.5mm珍珠女款银戒指 白色  14# 10-10.5mm</p>
+                            <p class="pro">￥180.00</p>
+                            <p class="price">￥246.00</p>
+                        
+                        </div>
+                  	</a>
+                </div>
+				<!--一项　end-->
+                	<!--一项-->
+                  <div class="swiper-slide">
+                  	<a href="#">
+                  		<div class="pic">
+                  			<img src="images/himg1.jpg">
+                  		</div>
+                        <div class="text">
+                        	<p class="name">千足珠宝叶澜近圆强光光洁10-10.5mm珍珠女款银戒指 白色  14# 10-10.5mm</p>
+                            <p class="pro">￥180.00</p>
+                            <p class="price">￥246.00</p>
+                        
+                        </div>
+                  	</a>
+                </div>
+				<!--一项　end-->
+                  
+                </div>
+               
+              </div>
+            	<!-- swiper-container end -->
+            
+            
+            </div>
+            <!--kill_con end-->
+        </section>
+       <!--floor_kill end-->
+       <!--floor_banner-->
+       <section class="floor_banner">
+       		<a href="#">
+       			<img src="images/banner6.jpg">
+            </a>
+       </section>
+       <!--floor_banner end-->
+       <!--floor_fashion-->
+       <section  class="floor_fashion">
+       		<h2 class="floor_bt">黄金珠宝</h2>
+            <!--floor_conb-->
+            <ul class="floor_conb clearfix">
+            	<li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                            <span>珍品</span> 
+                        </div>
+                        <img src="images/himg1.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                            <span>珍品</span> 
+                        </div>
+                        <img src="images/himg2.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                            <span>珍品</span> 
+                        </div>
+                        <img src="images/himg3.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                            <span>珍品</span> 
+                        </div>
+                        <img src="images/himg4.png">
+                     </a>
+                </li>
+            </ul>
+            <!--floor_conb end-->
+            <!--floor_cons-->
+            <ul class="floor_cons clearfix">
+            	<li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>黄金</h4>
+                            <p>夏日新款</p>
+                        </div>
+                        <img src="images/himg5.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                            
+                        </div>
+                        <img src="images/himg6.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                        </div>
+                        <img src="images/himg7.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                        </div>
+                        <img src="images/himg8.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>黄金</h4>
+                            <p>夏日新款</p>
+                        </div>
+                        <img src="images/himg5.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                            
+                        </div>
+                        <img src="images/himg6.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                        </div>
+                        <img src="images/himg7.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                        </div>
+                        <img src="images/himg8.jpg">
+                     </a>
+                </li>
+            </ul>
+            <!--floor_cons end-->
+       </section>
+       <!--floor_fashion end-->
+        <!--floor_banner-->
+       <section class="floor_banner">
+       		<a href="#">
+       			<img src="images/banner7.jpg">
+            </a>
+       </section>
+       <!--floor_banner end-->
+        <!--floor_fashion-->
+       <section  class="floor_fashion">
+       		<h2 class="floor_bt">专属推荐</h2>
+            <!--floor_conb-->
+            <ul class="floor_conb clearfix">
+            	<li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                            <span>珍品</span> 
+                        </div>
+                        <img src="images/himg1.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                            <span>珍品</span> 
+                        </div>
+                        <img src="images/himg2.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                            <span>珍品</span> 
+                        </div>
+                        <img src="images/himg3.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                            <span>珍品</span> 
+                        </div>
+                        <img src="images/himg4.png">
+                     </a>
+                </li>
+            </ul>
+            <!--floor_conb end-->
+            <!--floor_conm-->
+            <ul class="floor_conm clearfix">
+            	<li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>黄金</h4>
+                            <p>夏日新款</p>
+                        </div>
+                        <img src="images/himg5.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                            
+                        </div>
+                        <img src="images/himg6.jpg">
+                     </a>
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="con_text">
+                            <h4>经典馆</h4>
+                            <p>经典精品推荐</p>
+                        </div>
+                        <img src="images/himg7.jpg">
+                     </a>
+                </li>
+               
+            </ul>
+            <!--floor_conm end-->
+       </section>
+       <!--floor_fashion end-->
+       <section class="floor_select">
+       		<h2 class="floor_bt">精选珍品</h2>
+            <!--select_con-->
+       		<ul class="select_con clearfix">
+            	<li>
+                	<a href="#">
+                        <div class="pic">
+                            <img src="images/jimg7.jpg">
+                        </div>
+                        <div class="text">
+                            <p class="name">梅花水晶胸针女胸花韩版别针配饰品  天然珍珠胸0针 现货</p>
+                            <p class="price">￥3200.00</p>
+                        </div>
+                     </a>       
+                </li>
+                <li>
+                	<a href="#">
+                        <div class="pic">
+                            <img src="images/jimg1.jpg">
+                        </div>
+                        <div class="text">
+                            <p class="name">梅花水晶胸针女胸花韩版别针配饰品  天然珍珠胸0针 现货胸花韩版别针胸花韩版别针</p>
+                            <p class="price">￥3200.00</p>
+                        </div>
+                     </a>       
+                </li>	
+                <li>
+                	<a href="#">
+                        <div class="pic">
+                            <img src="images/jimg2.jpg">
+                        </div>
+                        <div class="text">
+                            <p class="name">梅花水晶胸针女胸花韩珠胸0针 现货</p>
+                            <p class="price">￥1200.00</p>
+                        </div>
+                     </a>       
+                </li>	
+                <li>
+                	<a href="#">
+                        <div class="pic">
+                            <img src="images/jimg3.jpg">
+                        </div>
+                        <div class="text">
+                            <p class="name">梅花水晶胸针女胸花韩版别针配饰品  天然珍</p>
+                            <p class="price">￥3600.00</p>
+                        </div>
+                     </a>       
+                </li>		
+            
+            </ul>
+            <!--select_con end-->
+       
+       </section>
+    </div>
+</main>
+<!--main end-->
+<!--footer-->
+<footer>
+	<ul>
+    	<li class="tab_on">
+        	<a href="">
+            </a>
+        </li>
+        <li>
+        	<a href="">
+            </a>
+        </li>
+        <li>
+        	<a href="">
+            </a>
+        </li>
+        <li>
+        	<a href="">
+            </a>
+        </li>
+        <li>
+        	<a href="">
+            </a>
+        </li>
+    </ul>
+
+</footer>
+<!--footer end-->
+<script src="js/swiper-4.1.6.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-banner', {
+		loop : true,
+	  	autoplay: {
+		  stopOnLastSlide: false,
+		  disableOnInteraction: false, 
+    	  delay: 3000,//1秒切换一次
+  		},
+      pagination: {
+        el: '.banner-pag',
+		clickable :true,
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper('.swiper-notice', {
+      direction: 'vertical',
+	  loop : true,
+	  	autoplay: {
+		  stopOnLastSlide: false,
+		  disableOnInteraction: false, 
+    	  delay: 3000,//1秒切换一次
+  		},
+     
+    });
+  </script>
+  <script>
+    var swiper = new Swiper('.swiper-kill', {
+      slidesPerView: 3.5,
+      spaceBetween: 20,
+	  freeMode : true,
+	  loop : true,
+      
+    });
+  </script>
+</body>
+</html>
